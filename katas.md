@@ -73,7 +73,6 @@
   - [link](https://github.com/MinniMieze/HeyBlue)
 - miro
   - [link](https://miro.com/app/board/uXjVPKX11Kg=/?share_link_id=243062536143)
-  - password - katas2022
 
 ## sections
 

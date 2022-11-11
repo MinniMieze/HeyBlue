@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="14WYc2qa2l7ySAg-PPHz" name="Capabilities">
-        <mxGraphModel dx="1136" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1136" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -186,24 +186,36 @@
         </mxGraphModel>
     </diagram>
     <diagram id="Ua2KmR-PlIGFEfY2PQ_q" name="Detailed_Architecture">
-        <mxGraphModel dx="1136" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1136" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="t3BhThxUgHB_aPhPucOx-0"/>
                 <mxCell id="t3BhThxUgHB_aPhPucOx-1" parent="t3BhThxUgHB_aPhPucOx-0"/>
                 <mxCell id="nh_10dwwK8tAp_1Nvpud-2" value="Registration" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;" parent="t3BhThxUgHB_aPhPucOx-1" vertex="1">
-                    <mxGeometry x="50" y="30" width="310" height="220" as="geometry"/>
+                    <mxGeometry x="50" y="30" width="740" height="480" as="geometry"/>
                 </mxCell>
                 <mxCell id="Md3SzDuIi8hnP8DvFBJs-0" value="App Installation" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;" parent="t3BhThxUgHB_aPhPucOx-1" vertex="1">
-                    <mxGeometry x="50" y="270" width="310" height="220" as="geometry"/>
+                    <mxGeometry x="400" y="890" width="310" height="230" as="geometry"/>
                 </mxCell>
                 <mxCell id="kOEBBSmqueMRqKk9rwof-0" value="Identity &amp;amp; Device matching" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;" parent="t3BhThxUgHB_aPhPucOx-1" vertex="1">
-                    <mxGeometry x="420" y="30" width="320" height="230" as="geometry"/>
+                    <mxGeometry x="70" y="890" width="320" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="KzRohKrkFNlhspMHAP7P-0" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="t3BhThxUgHB_aPhPucOx-1">
+                    <mxGeometry x="80" y="80" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="mqoMf35b2Kxg0nso1Zza-0" value="Webinterface" style="swimlane;horizontal=0;" vertex="1" parent="t3BhThxUgHB_aPhPucOx-1">
+                    <mxGeometry x="180" y="80" width="120" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="YHazx9bUnlJGEuW6IMj1-0" value="&quot;Gov&quot;&lt;br&gt;DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="t3BhThxUgHB_aPhPucOx-1">
+                    <mxGeometry x="690" y="190" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="YHazx9bUnlJGEuW6IMj1-1" value="Identity DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="t3BhThxUgHB_aPhPucOx-1">
+                    <mxGeometry x="690" y="80" width="60" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
     <diagram id="2rQ8UatO5pQA5P42Z-7X" name="Legend">
-        <mxGraphModel dx="1336" dy="899" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1336" dy="929" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="aRYE_QT8sAjMwUfaqoth-0"/>
                 <mxCell id="aRYE_QT8sAjMwUfaqoth-1" parent="aRYE_QT8sAjMwUfaqoth-0"/>

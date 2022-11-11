@@ -186,11 +186,11 @@
         </mxGraphModel>
     </diagram>
     <diagram id="Ua2KmR-PlIGFEfY2PQ_q" name="Detailed_Architecture">
-        <mxGraphModel dx="1136" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="1">
+        <mxGraphModel dx="316" dy="219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="1">
             <root>
                 <mxCell id="t3BhThxUgHB_aPhPucOx-0"/>
                 <mxCell id="t3BhThxUgHB_aPhPucOx-1" parent="t3BhThxUgHB_aPhPucOx-0"/>
-                <mxCell id="nh_10dwwK8tAp_1Nvpud-2" value="Registration" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;" parent="t3BhThxUgHB_aPhPucOx-1" vertex="1">
+                <mxCell id="nh_10dwwK8tAp_1Nvpud-2" value="&lt;b&gt;Registration&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;spacingLeft=4;" parent="t3BhThxUgHB_aPhPucOx-1" vertex="1">
                     <mxGeometry x="50" y="30" width="740" height="480" as="geometry"/>
                 </mxCell>
                 <mxCell id="Md3SzDuIi8hnP8DvFBJs-0" value="App Installation" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;" parent="t3BhThxUgHB_aPhPucOx-1" vertex="1">
@@ -207,6 +207,12 @@
                 </mxCell>
                 <mxCell id="mqoMf35b2Kxg0nso1Zza-0" value="Registration" style="swimlane;horizontal=0;" parent="t3BhThxUgHB_aPhPucOx-1" vertex="1">
                     <mxGeometry x="150" y="70" width="120" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="UuetTx8pMWsYKYFUfn9n-4" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" vertex="1" parent="mqoMf35b2Kxg0nso1Zza-0">
+                    <mxGeometry x="30" y="5" width="20" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="UuetTx8pMWsYKYFUfn9n-5" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.tab2;strokeColor=#c0c0c0;direction=north;" vertex="1" parent="mqoMf35b2Kxg0nso1Zza-0">
+                    <mxGeometry x="30" y="50" width="76" height="52" as="geometry"/>
                 </mxCell>
                 <mxCell id="YHazx9bUnlJGEuW6IMj1-0" value="&quot;Gov&quot;&lt;br&gt;DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="t3BhThxUgHB_aPhPucOx-1" vertex="1">
                     <mxGeometry x="690" y="190" width="60" height="80" as="geometry"/>

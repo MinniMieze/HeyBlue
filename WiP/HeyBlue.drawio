@@ -208,6 +208,9 @@
                 <mxCell id="rqReI5D34u8tfCQJoVWP-0" value="Process" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="aRYE_QT8sAjMwUfaqoth-1">
                     <mxGeometry x="440" y="270" width="120" height="60" as="geometry"/>
                 </mxCell>
+                <mxCell id="rqReI5D34u8tfCQJoVWP-1" value="Service" style="shape=tape;whiteSpace=wrap;html=1;" vertex="1" parent="aRYE_QT8sAjMwUfaqoth-1">
+                    <mxGeometry x="450" y="370" width="120" height="100" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>

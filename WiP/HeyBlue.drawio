@@ -199,7 +199,7 @@
                 <mxCell id="nt8SrSf8QAmNRPZn4lVv-2" value="Engine" style="shape=image;html=1;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;image=img/clipart/Gear_128x128.png" vertex="1" parent="aRYE_QT8sAjMwUfaqoth-1">
                     <mxGeometry x="400" y="130" width="50" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="nt8SrSf8QAmNRPZn4lVv-3" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="aRYE_QT8sAjMwUfaqoth-1">
+                <mxCell id="nt8SrSf8QAmNRPZn4lVv-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="aRYE_QT8sAjMwUfaqoth-1">
                     <mxGeometry x="165" y="260" width="30" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="nt8SrSf8QAmNRPZn4lVv-6" value="Webinterface" style="swimlane;horizontal=0;" vertex="1" parent="aRYE_QT8sAjMwUfaqoth-1">

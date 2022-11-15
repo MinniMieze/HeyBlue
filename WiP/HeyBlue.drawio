@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="14WYc2qa2l7ySAg-PPHz" name="Capabilities">
-        <mxGraphModel dx="1001" dy="830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1215" dy="976" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -186,7 +186,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="Ua2KmR-PlIGFEfY2PQ_q" name="Detailed_Architecture">
-        <mxGraphModel dx="1001" dy="830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" background="none" math="0" shadow="1">
+        <mxGraphModel dx="1087" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" background="none" math="0" shadow="1">
             <root>
                 <mxCell id="t3BhThxUgHB_aPhPucOx-0"/>
                 <mxCell id="t3BhThxUgHB_aPhPucOx-1" parent="t3BhThxUgHB_aPhPucOx-0"/>
@@ -215,10 +215,10 @@
                     <mxGeometry x="30" y="50" width="76" height="52" as="geometry"/>
                 </mxCell>
                 <mxCell id="YHazx9bUnlJGEuW6IMj1-0" value="&quot;Gov&quot;&lt;br&gt;DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="t3BhThxUgHB_aPhPucOx-1" vertex="1">
-                    <mxGeometry x="690" y="190" width="60" height="80" as="geometry"/>
+                    <mxGeometry x="860" y="210" width="60" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="YHazx9bUnlJGEuW6IMj1-1" value="Identity DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="t3BhThxUgHB_aPhPucOx-1" vertex="1">
-                    <mxGeometry x="690" y="80" width="60" height="80" as="geometry"/>
+                    <mxGeometry x="860" y="100" width="60" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="UuetTx8pMWsYKYFUfn9n-0" value="Process" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="t3BhThxUgHB_aPhPucOx-1" vertex="1">
                     <mxGeometry x="370" y="130" width="120" height="60" as="geometry"/>
@@ -227,7 +227,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="2rQ8UatO5pQA5P42Z-7X" name="Legend">
-        <mxGraphModel dx="1136" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1215" dy="976" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="aRYE_QT8sAjMwUfaqoth-0"/>
                 <mxCell id="aRYE_QT8sAjMwUfaqoth-1" parent="aRYE_QT8sAjMwUfaqoth-0"/>

@@ -23,6 +23,8 @@ box "External Services"
     participant MAPS_Service
 end box
 
+'##### Desktop User through the webside
+
 opt PC User
     User --> User : Opens Desktop Store
     activate User

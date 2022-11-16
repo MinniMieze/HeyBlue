@@ -1,0 +1,93 @@
+@startuml User Browses Stores
+
+title
+Usecase 12
+Step 1 : User opens / browses store
+end title
+
+autonumber
+
+actor User as "Civilian\nUser"
+participant Desktop as "Desktop\nWebside"
+participant Mobile as "Mobile\nApp"
+
+participant API_Layer as "Hey Blue\nAPI Layer"
+
+participant Storefront as "Hey Blue\nStorefront"
+participant Storefront_DB as "Hey Blue\nStorefront DB"
+
+opt PC User
+    User --> User : Opens Desktop Store
+    activate User
+        User --> Desktop : Access
+        activate Desktop
+            Desktop --> API_Layer : GET Request
+            activate API_Layer
+                API_Layer --> Storefront : GET Request
+                activate Storefront
+                    Storefront --> Storefront_DB : Lookup Request
+                    activate Storefront_DB
+                        Storefront_DB --> Storefront_DB : Lookup and\nprepare feedback
+                        Storefront_DB --> Storefront : Lookup Response
+                    deactivate Storefront_DB
+                    Storefront --> API_Layer : GET Response
+                deactivate Storefront
+                API_Layer --> Desktop : GET Response
+            deactivate API_Layer
+            Desktop --> User : Display
+        deactivate Desktop
+        User --> User : View
+    deactivate User
+end
+
+'###### Mobile User through App
+
+opt Mobile User
+    User --> User : Opens Mobile Store
+    activate User
+        User --> Mobile : Access
+        activate Mobile
+            Mobile --> API_Layer : GET Request
+            activate API_Layer
+                API_Layer --> API_Layer : Atomize Interaction
+                API_Layer --> MAPS_Service : GET Location
+                activate API_Layer
+                    activate MAPS_Service
+                        MAPS_Service --> MAPS_Service : GET User\nLocation
+                        MAPS_Service --> API_Layer : GET Response
+                    deactivate MAPS_Service
+                deactivate API_Layer
+                API_Layer --> Storefront : GET Request\nNearest Stores
+                activate API_Layer
+                    activate Storefront
+                        Storefront --> Storefront_DB : Lookup Request
+                        activate Storefront_DB
+                            Storefront_DB --> Storefront_DB : Lookup and\nprepare feedback
+                            Storefront_DB --> Storefront : Lookup Response
+                        deactivate Storefront_DB
+                        Storefront --> API_Layer : GET Response
+                    deactivate Storefront
+                deactivate API_Layer
+                API_Layer --> MAPS_Service : Store locations
+                activate MAPS_Service
+                    activate API_Layer
+                    MAPS_Service --> MAPS_Service : Store Locations
+                    MAPS_Service --> API_Layer : GET Response
+                    deactivate API_Layer
+                deactivate MAPS_Service
+                API_Layer --> API_Layer : Consolidate Responses
+                API_Layer --> Mobile : GET Response
+            deactivate API_Layer
+            Mobile --> User : Display
+        deactivate Mobile
+        User --> User : View
+    deactivate User
+end
+
+
+
+
+
+
+
+@enduml 

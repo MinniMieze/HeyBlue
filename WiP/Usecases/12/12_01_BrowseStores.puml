@@ -8,13 +8,20 @@ end title
 autonumber
 
 actor User as "Civilian\nUser"
-participant Desktop as "Desktop\nWebside"
-participant Mobile as "Mobile\nApp"
 
-participant API_Layer as "Hey Blue\nAPI Layer"
+box "Hey Blue" #Lightblue
+    participant Desktop as "Desktop\nWebside"
+    participant Mobile as "Mobile\nApp"
 
-participant Storefront as "Hey Blue\nStorefront"
-participant Storefront_DB as "Hey Blue\nStorefront DB"
+    participant API_Layer as "Hey Blue\nAPI Layer"
+
+    participant Storefront as "Hey Blue\nStorefront"
+    participant Storefront_DB as "Hey Blue\nStorefront DB"
+end box
+
+box "External Services" 
+    participant MAPS_Service
+end box
 
 opt PC User
     User --> User : Opens Desktop Store
@@ -71,8 +78,8 @@ opt Mobile User
                 API_Layer --> MAPS_Service : Store locations
                 activate MAPS_Service
                     activate API_Layer
-                    MAPS_Service --> MAPS_Service : Store Locations
-                    MAPS_Service --> API_Layer : GET Response
+                        MAPS_Service --> MAPS_Service : Store Locations
+                        MAPS_Service --> API_Layer : GET Response
                     deactivate API_Layer
                 deactivate MAPS_Service
                 API_Layer --> API_Layer : Consolidate Responses

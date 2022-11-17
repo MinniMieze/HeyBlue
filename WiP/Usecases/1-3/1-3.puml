@@ -61,7 +61,7 @@ Off --> Off : Opens App
             deactivate ID_DB
         API_Layer -> Mobile : response for \nuser registration process
         deactivate API_Layer
-    Mobile -> CIV : end user registration
+    Mobile -> Civ : end user registration
     Mobile -> Off : end user registration
     deactivate Mobile
 end
@@ -85,7 +85,7 @@ Off --> Off : Opens Webside
             deactivate ID_DB
         API_Layer -> Desktop : response for \nuser registration process
         deactivate API_Layer
-    Desktop -> CIV : end user registration
+    Desktop -> Civ : end user registration
     Desktop -> Off : end user registration
     deactivate Desktop
 end

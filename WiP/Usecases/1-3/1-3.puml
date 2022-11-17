@@ -1,4 +1,4 @@
-@startuml User Registration & App Installation
+@startuml  App Installation & User Registration
 
 title
 Usecase 1-3
@@ -21,10 +21,37 @@ box "Hey Blue" #Lightblue
 end box
 
 box "External Services" 
-    participant MAPS_Service
-    participant "App Stores"
-    participant "Federated Identity Services"
+    participant Appstore as "App Stores"
+    participant FIS as "Federated Identity Services"
 end box
 
+'##### App Installation
+
+opt App installation workflow
+Civ --> Civ : Opens Device App Store
+Off --> Off : Opens Device App store
+ activate Civ
+ activate Off
+    activate Appstore
+    Civ -> Appstore : search App and request for installation
+    Appstore -> Civ : install app
+    Off -> Appstore : search App and request for installation
+    Appstore -> Civ : install app
+    deactivate Appstore 
+end
+
+
+'###### User Registration
+
+opt User Registration
+
+
+end
+
+
+
+
+'###### missing
+' Fill the gov DB or manual check via Admin GUI
 
 @enduml 

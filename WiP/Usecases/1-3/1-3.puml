@@ -60,6 +60,12 @@ Off --> Off : Opens App
                 FIS -> API_Layer : response for user request
                 deactivate FIS
             ID_DB -> API_Layer : response to user creation
+            opt Officer Govermental check
+                API_Layer -> GOV_DB : valid gov user
+                activate GOV_DB
+                GOV_DB -> API_Layer : response to user
+                deactivate GOV_DB
+            end
             deactivate ID_DB
         API_Layer -> Mobile : response for \nuser registration process
         deactivate API_Layer
@@ -87,6 +93,12 @@ Off --> Off : Opens Webside
                 FIS -> API_Layer : response for user request
                 deactivate FIS
             ID_DB -> API_Layer : response to user creation
+            opt Officer Govermental check
+                API_Layer -> GOV_DB : valid gov user
+                activate GOV_DB
+                GOV_DB -> API_Layer : response to user
+                deactivate GOV_DB
+            end
             deactivate ID_DB
         API_Layer -> Desktop : response for \nuser registration process
         deactivate API_Layer

@@ -43,12 +43,23 @@ end
 
 '###### User Registration
 
-opt User Registration
-
-
+opt User Registration via App
+Civ --> Civ : Opens App
+Off --> Off : Opens App
+activate Mobile
+Civ -> Mobile : start user registration
+Off -> Mobile : start user registration
+activate API_Layer 
+Mobile -> API_Layer : user registration service
+activate ID_DB
 end
 
 
+opt User Registration via Desktop Webside
+Civ --> Civ : Opens Webside
+Off --> Off : Opens Webside
+
+end
 
 
 '###### missing

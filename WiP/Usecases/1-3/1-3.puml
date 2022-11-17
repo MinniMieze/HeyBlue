@@ -28,16 +28,16 @@ end box
 '##### App Installation
 
 opt App installation workflow
-Civ --> Civ : Opens Device App Store
-Off --> Off : Opens Device App store
- activate Civ
- activate Off
-    activate Appstore
+    Civ --> Civ : Opens Device App Store
+    activate Civ
+    Off --> Off : Opens Device App store
+    activate Off
     Civ -> Appstore : search App and request for installation
-    Appstore -> Civ : install app
-    Off -> Appstore : search App and request for installation
-    Appstore -> Civ : install app
-    deactivate Appstore 
+    activate Appstore
+        Appstore -> Civ : install app
+        Off -> Appstore : search App and request for installation
+        Appstore -> Civ : install app
+    deactivate Appstore
 end
 
 
@@ -46,15 +46,17 @@ end
 opt User Registration via App
 Civ --> Civ : Opens App
 Off --> Off : Opens App
-    activate Mobile
+    
     Civ -> Mobile : start user registration
+    activate Mobile
     Off -> Mobile : start user registration
-        activate API_Layer 
+        
         Mobile -> API_Layer : user registration service
-            activate ID_DB
+            activate API_Layer 
             API_Layer -> ID_DB : create new account if needed
-                activate FIS
+                activate ID_DB
                 API_Layer -> FIS : check for existing user
+                activate FIS
                 FIS -> API_Layer : response for user request
                 deactivate FIS
             ID_DB -> API_Layer : response to user creation
@@ -70,15 +72,18 @@ end
 opt User Registration via Desktop Webside
 Civ --> Civ : Opens Webside
 Off --> Off : Opens Webside
-   activate Desktop
+   
     Civ -> Desktop : start user registration
+    activate Desktop
     Off -> Desktop : start user registration
-        activate API_Layer 
+         
         Desktop -> API_Layer : user registration service
-            activate ID_DB
+            
+            activate API_Layer
             API_Layer -> ID_DB : create new account if needed
-                activate FIS
+                activate ID_DB
                 API_Layer -> FIS : check for existing user
+                activate FIS
                 FIS -> API_Layer : response for user request
                 deactivate FIS
             ID_DB -> API_Layer : response to user creation

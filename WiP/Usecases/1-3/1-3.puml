@@ -61,7 +61,7 @@ Off --> Off : Opens App
                 deactivate FIS
             ID_DB -> API_Layer : response to user creation
             opt Officer Govermental check
-                API_Layer -> GOV_DB : valid gov user
+                API_Layer -> GOV_DB : valid gov user ?
                 activate GOV_DB
                 GOV_DB -> API_Layer : response to user
                 deactivate GOV_DB
@@ -94,7 +94,7 @@ Off --> Off : Opens Webside
                 deactivate FIS
             ID_DB -> API_Layer : response to user creation
             opt Officer Govermental check
-                API_Layer -> GOV_DB : valid gov user
+                API_Layer -> GOV_DB : valid gov user ?
                 activate GOV_DB
                 GOV_DB -> API_Layer : response to user
                 deactivate GOV_DB
@@ -111,6 +111,6 @@ end
 
 '###### missing
 ' Fill the gov DB or manual check via Admin GUI
-' Check Gov User against Gov DB
+
 
 @enduml 

@@ -1,0 +1,30 @@
+@startuml User Registration & App Installation
+
+title
+Usecase 1-3
+User Registration / App Installation
+end title
+
+autonumber
+
+actor Civ as "Civilian\nUser"
+actor Off as "Officer\nUser"
+
+box "Hey Blue" #Lightblue
+    participant Desktop as "Desktop\nWebside"
+    participant Mobile as "Mobile\nApp"
+
+    participant API_Layer as "Hey Blue\nAPI Layer"
+
+    participant ID_DB as "Hey Blue\nIdentity Database"
+    participant GOV_DB as "Hey Blue\nGoverment Database"
+end box
+
+box "External Services" 
+    participant MAPS_Service
+    participant "App Stores"
+    participant "Federated Identity Services"
+end box
+
+
+@enduml 

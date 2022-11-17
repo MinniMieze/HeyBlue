@@ -46,23 +46,54 @@ end
 opt User Registration via App
 Civ --> Civ : Opens App
 Off --> Off : Opens App
-activate Mobile
-Civ -> Mobile : start user registration
-Off -> Mobile : start user registration
-activate API_Layer 
-Mobile -> API_Layer : user registration service
-activate ID_DB
+    activate Mobile
+    Civ -> Mobile : start user registration
+    Off -> Mobile : start user registration
+        activate API_Layer 
+        Mobile -> API_Layer : user registration service
+            activate ID_DB
+            API_Layer -> ID_DB : create new account if needed
+                activate FIS
+                API_Layer -> FIS : check for existing user
+                FIS -> API_Layer : response for user request
+                deactivate FIS
+            ID_DB -> API_Layer : response to user creation
+            deactivate ID_DB
+        API_Layer -> Mobile : response for \nuser registration process
+        deactivate API_Layer
+    Mobile -> CIV : end user registration
+    Mobile -> Off : end user registration
+    deactivate Mobile
 end
 
 
 opt User Registration via Desktop Webside
 Civ --> Civ : Opens Webside
 Off --> Off : Opens Webside
-
+   activate Desktop
+    Civ -> Desktop : start user registration
+    Off -> Desktop : start user registration
+        activate API_Layer 
+        Desktop -> API_Layer : user registration service
+            activate ID_DB
+            API_Layer -> ID_DB : create new account if needed
+                activate FIS
+                API_Layer -> FIS : check for existing user
+                FIS -> API_Layer : response for user request
+                deactivate FIS
+            ID_DB -> API_Layer : response to user creation
+            deactivate ID_DB
+        API_Layer -> Desktop : response for \nuser registration process
+        deactivate API_Layer
+    Desktop -> CIV : end user registration
+    Desktop -> Off : end user registration
+    deactivate Desktop
 end
+
 
 
 '###### missing
 ' Fill the gov DB or manual check via Admin GUI
+' Check Gov User against Gov DB
 
 @enduml 
